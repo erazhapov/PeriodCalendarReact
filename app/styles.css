@@ -1,0 +1,107 @@
+.period-calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.period-calendar .month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 177.5px;
+  margin: 20px;
+}
+
+.period-calendar .month .days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.period-calendar .month .days .day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: lightblue;
+  cursor: pointer;
+  border: 2.5px solid #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 8pt;
+  color: #fff;
+}
+
+.period-calendar .month .days .day-empty {
+  background: none;
+}
+
+.period-calendar .month .days .day-period-1 {
+  background-color: coral;
+  -webkit-filter: grayscale(40%);
+          filter: grayscale(40%);
+}
+
+.period-calendar .month .days .day-period-2 {
+  background-color: greenyellow;
+  -webkit-filter: grayscale(40%);
+          filter: grayscale(40%);
+}
+
+.period-calendar .month .days .day-period-3 {
+  background-color: gold;
+  -webkit-filter: grayscale(40%);
+          filter: grayscale(40%);
+}
+
+.period-calendar .month .days .day-period-active {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.period-calendar .month .days .day-period-hover {
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
